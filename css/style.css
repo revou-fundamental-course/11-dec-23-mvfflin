@@ -6,10 +6,15 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 :root {
   --dark-gray-800: #262626;
   --dark-gray-950: #0a0a0a;
   --dark-gray-900: #18181b;
+  --montserrat: "Montserrat", sans-serif;
 }
 
 /* Header stylings */
@@ -40,12 +45,12 @@
 .nav-logo h1 {
   color: white;
   padding-top: 15px;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--montserrat);
   font-weight: bold;
 }
 
 .nav-menu {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--montserrat);
   list-style: none;
   justify-content: flex-end;
   padding: 15px;
@@ -78,5 +83,61 @@
 /* Body styling */
 body {
   background-color: var(--dark-gray-950);
-  height: 1000px;
+}
+
+#home {
+  display: flex;
+  height: 100vh;
+  background-image: linear-gradient(
+      to bottom,
+      var(--dark-gray-800),
+      var(--dark-gray-950)
+    ),
+    url("../assets/kucing.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+#home div {
+  font-family: var(--montserrat);
+  padding-top: 260px;
+  width: 100%;
+  text-align: center;
+}
+
+#home div h1,
+#home div h3 {
+  color: white;
+}
+
+#home div h3 {
+  margin-top: 20px;
+}
+
+#home div h2 {
+  font-size: 72px;
+  color: black;
+  padding: 10px 17px;
+  background-color: white;
+  margin: 12px auto;
+  width: max-content;
+  border-radius: 3px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.199s ease-in-out;
+}
+
+#home div h2:hover {
+  rotate: 6deg;
+  scale: 1.2;
+  box-shadow: whitesmoke 5px 5px 10px;
+}
+
+/* Responsive navbar */
+@media screen and (max-width: 600px) {
+  .nav-menu {
+    display: none;
+  }
 }
