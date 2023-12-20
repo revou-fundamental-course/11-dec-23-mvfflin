@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Profil Fatihul Ihsan (Fatih)</title>
+  <!-- stylesheet/css -->
   <link href="./css/style.css" rel="stylesheet" />
 </head>
 
@@ -18,14 +19,19 @@
       </div>
 
       <!-- Navigation -->
+      <input type="checkbox" id="enable-navigation" />
+      <label for="enable-navigation" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </label>
+
       <ul class="nav-menu">
-        <li><a href="#home">
+        <li onclick="menuClick()"><a href="#home">
             Home
           </a></li>
-        <li><a>
-            Our Profile
+        <li onclick="menuClick()"><a>
+            Our Profile (About me)
           </a></li>
-        <li><a>
+        <li onclick="menuClick()"><a>
             Message Us
           </a></li>
       </ul>
@@ -38,22 +44,27 @@
     <!-- Home section -->
     <section id="home">
       <div>
-        <h1>Halo semua, namaku</h1>
+        <h1>Hi everyone! my name is</h1>
         <h2 onclick="window.open('https://github.com/mvfflin', '_blank');">
           Fatih
         </h2>
         <h1>
-          Salam kenal 😁
+          Nice to meet you 😁
         </h1>
-        <h3>Scroll kebawah untuk lebih lanjut!</h3>
+        <h3>Scroll for more! (or use the navigation bar)</h3>
       </div>
     </section>
+
   </main>
 
   <!-- Footer -->
   <footer>
 
   </footer>
+
+  <script src="./js/script.js"></script>
+  <!-- font awesome kit (untuk hamburger icon) -->
+  <script src="https://kit.fontawesome.com/b52d0fc4c6.js" crossorigin="anonymous"></script>s
 </body>
 
 </html>
