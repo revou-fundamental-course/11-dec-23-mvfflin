@@ -306,6 +306,18 @@ body {
   }
 }
 
+/* Footer */
+footer {
+  position: relative;
+  bottom: 0;
+  padding: 5px;
+  font-size: 10px;
+  text-align: center;
+  color: white;
+  font-family: var(--montserrat);
+  background-color: var(--dark-gray-900);
+}
+
 /* Responsive navbar */
 #enable-navigation {
   display: none;
