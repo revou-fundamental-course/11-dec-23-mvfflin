@@ -31,7 +31,7 @@
         <li onclick="menuClick()"><a href="#about">
             Our Profile (About me)
           </a></li>
-        <li onclick="menuClick()"><a>
+        <li onclick="menuClick()"><a href="#message-us">
             Message Us
           </a></li>
       </ul>
@@ -60,6 +60,40 @@
         <h1>About me</h1>
         <h2>Halo, namaku fatih! umurku 15 tahun, aku seorang pelajar yang suka dengan web development. Hobiku adalah bermain game, programming kecil-kecilan, dan olahraga. Cita-citaku menjadi seorang software engineer atau web developer yang ahli dalam membuat suatu aplikasi maupun website. Kunjungi webku juga yang ini ya --> <a href="https://mvffin.my.id">Klik disini!</a></span></h2>
       </div>
+    </section>
+    <!-- Message Us section -->
+    <section id="message-us">
+      <div>
+        <h1>Message Us</h1>
+        <div>
+          <div class="input-box">
+            <form>
+              <label for="name">Nama :</label>
+              <input type="text" id="name" name="name" />
+              <label for="birth">Tanggal lahir :</label>
+              <input type="date" id="birth" name="birth" />
+              <label>Jenis kelamin :</label>
+              <div>
+                <input type="radio" id="laki" name="gender" value="Laki-laki" />
+                <label for="laki" class="label-gender">Laki-laki</label>
+                <input type="radio" id="perempuan" name="gender" value="Perempuan" />
+                <label for="perempuan" class="label-gender">Perempuan</label>
+              </div>
+
+              <label for="pesan">Pesan :</label>
+              <textarea id="pesan" name="pesan" placeholder="Tulis pesanmu disini..."></textarea>
+              <button type="button" id="btn-submit" onclick="submitMessage()">Submit</button>
+            </form>
+          </div>
+          <div class="output-box">
+            <h1>Hasil form message us</h1>
+            <p id="current-date"></p>
+            <p id="name-result"></p>
+            <p id="birth-result"></p>
+            <p id="gender-result"></p>
+            <p id="pesan-result"></p>
+          </div>
+        </div>
     </section>
   </main>
 
