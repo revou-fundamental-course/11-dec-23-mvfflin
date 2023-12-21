@@ -139,12 +139,8 @@ body {
 
 /* About section */
 #about {
-  display: flex;
-  padding: 100px 90px;
-}
-
-#about div {
   display: block;
+  padding: 100px 90px;
 }
 
 #about h1 {
